@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <title>Руководство ПД — Arizona RP</title>
+  <meta charset="UTF-8">
+  <title>Сотрудники ПД — Arizona RP</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Добро пожаловать в Руководство Полиции</h1>
-  <p>Здесь вы найдёте устав, правила, доклады и многое другое.</p>
+<body class="bg-gray-900 text-white min-h-screen p-8">
+  <h1 class="text-3xl font-bold mb-6 text-center">Список сотрудников Полиции</h1>
+
+  <div class="overflow-x-auto">
+    <table class="min-w-full border border-gray-700 rounded-lg overflow-hidden">
+      <thead class="bg-gray-800 text-gray-300">
+        <tr>
+          <th class="px-6 py-3 border-b border-gray-600">ID</th>
+          <th class="px-6 py-3 border-b border-gray-600">Имя</th>
+          <th class="px-6 py-3 border-b border-gray-600">Ранг</th>
+          <th class="px-6 py-3 border-b border-gray-600">Позывной</th>
+          <th class="px-6 py-3 border-b border-gray-600">Статус</th>
+        </tr>
+      </thead>
+      <tbody class="bg-gray-700 divide-y divide-gray-600">
+        <tr>
+          <td class="px-6 py-4 text-center">001</td>
+          <td class="px-6 py-4">Сергей Ветров</td>
+          <td class="px-6 py-4">Капитан</td>
+          <td class="px-6 py-4">Alpha-1</td>
+          <td class="px-6 py-4 text-green-400">На дежурстве</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-center">002</td>
+          <td class="px-6 py-4">Максим Орлов</td>
+          <td class="px-6 py-4">Лейтенант</td>
+          <td class="px-6 py-4">Bravo-2</td>
+          <td class="px-6 py-4 text-red-400">Оффлайн</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-center">003</td>
+          <td class="px-6 py-4">Алексей Ковалев</td>
+          <td class="px-6 py-4">Мл. сержант</td>
+          <td class="px-6 py-4">Echo-3</td>
+          <td class="px-6 py-4 text-green-400">На дежурстве</td>
+        </tr>
+        <tr>
+          <td class="px-6 py-4 text-center">004</td>
+          <td class="px-6 py-4">Дмитрий Чернов</td>
+          <td class="px-6 py-4">Генерал</td>
+          <td class="px-6 py-4">Command</td>
+          <td class="px-6 py-4 text-yellow-300">В отпуске</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
